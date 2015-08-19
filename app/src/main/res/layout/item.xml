@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/qBar1"
+        style="@style/bar">
+        <TextView
+            android:id="@+id/qText1"
+            style="@style/text"
+            android:text="@string/question1" />
+        <Spinner
+            android:id="@+id/sel1"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/height">
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/qBar2"
+        style="@style/bar">
+        <TextView
+            android:id="@+id/qText2"
+            style="@style/text"
+            android:text="@string/question2" />
+        <Spinner
+            android:id="@+id/sel2"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/height">
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/qBar3"
+        style="@style/bar">
+        <TextView
+            android:id="@+id/qText3"
+            style="@style/text"
+            android:text="@string/question3" />
+        <Spinner
+            android:id="@+id/sel3"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/height">
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/qBar4"
+        style="@style/bar">
+        <TextView
+            android:id="@+id/qText4"
+            style="@style/text"
+            android:text="@string/question4" />
+        <Spinner
+            android:id="@+id/sel4"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/height">
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/qBar5"
+        style="@style/bar">
+        <TextView
+            android:id="@+id/qText5"
+            style="@style/text"
+            android:text="@string/question5" />
+        <Spinner
+            android:id="@+id/sel5"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/height">
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/qBar6"
+        style="@style/bar">
+        <TextView
+            android:id="@+id/qText6"
+            style="@style/text"
+            android:text="@string/question6" />
+        <Spinner
+            android:id="@+id/sel6"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/height">
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/qBar7"
+        style="@style/bar">
+        <TextView
+            android:id="@+id/qText7"
+            style="@style/text"
+            android:text="@string/question7" />
+        <Spinner
+            android:id="@+id/sel7"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/height">
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/qBar8"
+        style="@style/bar">
+        <TextView
+            android:id="@+id/qText8"
+            style="@style/text"
+            android:text="@string/question8" />
+        <Spinner
+            android:id="@+id/sel8"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/height">
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/qBar9"
+        style="@style/bar">
+        <TextView
+            android:id="@+id/qText9"
+            style="@style/text"
+            android:text="@string/question9" />
+        <Spinner
+            android:id="@+id/sel9"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/height">
+        </Spinner>
+    </LinearLayout>
+</LinearLayout>

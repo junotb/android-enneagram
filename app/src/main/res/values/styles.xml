@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme">
+    </style>
+    <style name="topbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#555555</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="type">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#555555</item>
+        <item name="android:textSize">24dp</item>
+    </style>
+    <style name="bar">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/rectangle</item>
+        <item name="android:textColor">#555555</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="spinner">
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+</resources>
