@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="#301551"
+    tools:context=".EnneagramActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="20pt"
+            android:text="@string/appName" />
+        <TextView
+            android:id="@+id/thankYouTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="40dp"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:lineSpacingExtra="2pt"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="6pt"
+            android:text="@string/thankYou"/>
+        <Button
+            android:id="@+id/toSurveyButton"
+            style="@style/introButton"
+            android:text="@string/toSurveyButton"/>
+        <Button
+            android:id="@+id/toIntroductionButton"
+            style="@style/introButton"
+            android:text="@string/toIntroductionButton"/>
+        <Button
+            android:id="@+id/toDictionaryButton"
+            style="@style/introButton"
+            android:visibility="gone"
+            android:text="@string/toDictionaryButton"/>
+    </LinearLayout>
+</LinearLayout>

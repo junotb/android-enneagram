@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hidden">
+    <LinearLayout
+        style="@style/topbarLayout">
+        <Button
+            android:id="@+id/leftArrow"
+            style="@style/arrow"
+            android:text="@string/leftArrow"/>
+        <TextView
+            android:id="@+id/topbar"
+            style="@style/topbar"
+            android:text="@string/appName"/>
+        <Button
+            android:id="@+id/rightArrow"
+            style="@style/arrow"/>
+    </LinearLayout>
+    <TextView
+        style="@style/box"
+        android:text="@string/DictionaryBasic"/>
+    <LinearLayout
+        style="@style/hiddenLayout">
+        <Button
+            android:id="@+id/basicButton1"
+            style="@style/hiddenButton"
+            android:text="1유형"/>
+        <Button
+            android:id="@+id/basicButton2"
+            style="@style/hiddenButton"
+            android:text="2유형"/>
+        <Button
+            android:id="@+id/basicButton3"
+            style="@style/hiddenButton"
+            android:text="3유형"/>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/hiddenLayout">
+        <Button
+            android:id="@+id/basicButton4"
+            style="@style/hiddenButton"
+            android:text="4유형"/>
+        <Button
+            android:id="@+id/basicButton5"
+            style="@style/hiddenButton"
+            android:text="5유형"/>
+        <Button
+            android:id="@+id/basicButton6"
+            style="@style/hiddenButton"
+            android:text="6유형"/>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/hiddenLayout">
+        <Button
+            android:id="@+id/basicButton7"
+            style="@style/hiddenButton"
+            android:text="7유형"/>
+        <Button
+            android:id="@+id/basicButton8"
+            style="@style/hiddenButton"
+            android:text="8유형"/>
+        <Button
+            android:id="@+id/basicButton9"
+            style="@style/hiddenButton"
+            android:text="9유형"/>
+    </LinearLayout>
+    <TextView
+        style="@style/box"
+        android:text="@string/DictionaryWing"/>
+    <LinearLayout
+        style="@style/hiddenLayout">
+        <Button
+            android:id="@+id/wingButton1w9"
+            style="@style/hiddenButton"
+            android:text="1유형 9번 날개"/>
+        <Button
+            android:id="@+id/wingButton1w2"
+            style="@style/hiddenButton"
+            android:text="1유형 2번 날개"/>
+        <Button
+            android:id="@+id/wingButton2w1"
+            style="@style/hiddenButton"
+            android:text="2유형 1번 날개"/>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/hiddenLayout">
+        <Button
+            android:id="@+id/wingButton2w3"
+            style="@style/hiddenButton"
+            android:text="2유형 3번 날개"/>
+        <Button
+            android:id="@+id/wingButton3w2"
+            style="@style/hiddenButton"
+            android:text="3유형 2번 날개"/>
+        <Button
+            android:id="@+id/wingButton3w4"
+            style="@style/hiddenButton"
+            android:text="3유형 4번 날개"/>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/hiddenLayout">
+        <Button
+            android:id="@+id/wingButton4w3"
+            style="@style/hiddenButton"
+            android:text="4유형 3번 날개"/>
+        <Button
+            android:id="@+id/wingButton4w5"
+            style="@style/hiddenButton"
+            android:text="4유형 5번 날개"/>
+        <Button
+            android:id="@+id/wingButton5w4"
+            style="@style/hiddenButton"
+            android:text="5유형 4번 날개"/>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/hiddenLayout">
+        <Button
+            android:id="@+id/wingButton5w6"
+            style="@style/hiddenButton"
+            android:text="5유형 6번 날개"/>
+        <Button
+            android:id="@+id/wingButton6w5"
+            style="@style/hiddenButton"
+            android:text="6유형 5번 날개"/>
+        <Button
+            android:id="@+id/wingButton6w7"
+            style="@style/hiddenButton"
+            android:text="6유형 7번 날개"/>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/hiddenLayout">
+        <Button
+            android:id="@+id/wingButton7w6"
+            style="@style/hiddenButton"
+            android:text="7유형 6번 날개"/>
+        <Button
+            android:id="@+id/wingButton7w8"
+            style="@style/hiddenButton"
+            android:text="7유형 8번 날개"/>
+        <Button
+            android:id="@+id/wingButton8w7"
+            style="@style/hiddenButton"
+            android:text="8유형 7번 날개"/>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/hiddenLayout">
+        <Button
+            android:id="@+id/wingButton8w9"
+            style="@style/hiddenButton"
+            android:text="8유형 9번 날개"/>
+        <Button
+            android:id="@+id/wingButton9w8"
+            style="@style/hiddenButton"
+            android:text="9유형 8번 날개"/>
+        <Button
+            android:id="@+id/wingButton9w1"
+            style="@style/hiddenButton"
+            android:text="9유형 1번 날개"/>
+    </LinearLayout>
+</LinearLayout>

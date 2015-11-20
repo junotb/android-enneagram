@@ -5,20 +5,65 @@
     android:background="#FFFFFF"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Result">
-    <TextView
-        android:id="@+id/type"
-        style="@style/type"/>
+    tools:context=".ResultActivity">
+    <LinearLayout
+        style="@style/topbarLayout">
+        <Button
+            android:id="@+id/leftArrow"
+            style="@style/arrow"
+            android:text="@string/leftArrow"/>
+        <TextView
+            android:id="@+id/topbar"
+            style="@style/topbar"
+            android:text="@string/appName"/>
+        <Button
+            android:id="@+id/rightArrow"
+            style="@style/arrow"/>
+    </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <TextView
-            android:id="@+id/summary"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="12dip"
-            android:textColor="#000000"
-            android:textSize="20dp"
-            android:lineSpacingExtra = "4dip"/>
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+        <TextView
+            android:id="@+id/resultBar"
+            style="@style/resultBar"
+            android:text="@string/result1"/>
+        <TextView
+            android:id="@+id/resultSummary"
+            style="@style/box"
+            android:text="@string/summary"/>
+        <TextView
+            android:id="@+id/type1"
+            style="@style/type"
+            android:text="@string/type11"/>
+        <TextView
+            android:id="@+id/resultGood"
+            style="@style/box"
+            android:text="@string/summaryGood"/>
+        <TextView
+            android:id="@+id/type2"
+            style="@style/type"
+            android:text="@string/type12"/>
+        <TextView
+            android:id="@+id/resultBad"
+            style="@style/box"
+            android:text="@string/summaryBad"/>
+        <TextView
+            android:id="@+id/type3"
+            style="@style/type"
+            android:text="@string/type13"/>
+        <TextView
+            android:id="@+id/resultWing"
+            style="@style/box"
+            android:text="@string/summaryWing"/>
+        <TextView
+            android:id="@+id/typew"
+            style="@style/type"
+            android:text="@string/type1w2"/>
+        </LinearLayout>
     </ScrollView>
 </LinearLayout>

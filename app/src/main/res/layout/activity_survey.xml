@@ -1,0 +1,537 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mainLayout"
+    tools:context=".SurveyActivity">
+    <LinearLayout
+        style="@style/topbarLayout">
+        <Button
+            android:id="@+id/leftArrow"
+            style="@style/arrow"
+            android:text="@string/leftArrow"/>
+        <TextView
+            android:id="@+id/topbar"
+            style="@style/topbar"
+            android:text="1 / 10"/>
+        <Button
+            android:id="@+id/rightArrow"
+            style="@style/arrow"
+            android:text="@string/rightArrow"/>
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#FFFFFF">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp" >
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/text"
+                android:text="@string/survey1" />
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                style="@style/radioGroup" >
+                <RadioButton
+                    android:id="@+id/radiobutton11"
+                    style="@style/button"
+                    android:text="@string/radioButton1" />
+                <RadioButton
+                    android:id="@+id/radiobutton12"
+                    style="@style/button"
+                    android:text="@string/radioButton2" />
+                <RadioButton
+                    android:id="@+id/radiobutton13"
+                    style="@style/button"
+                    android:text="@string/radioButton3" />
+                <RadioButton
+                    android:id="@+id/radiobutton14"
+                    style="@style/button"
+                    android:text="@string/radioButton4" />
+                <RadioButton
+                    android:id="@+id/radiobutton15"
+                    style="@style/button"
+                    android:text="@string/radioButton5" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/text"
+                android:text="@string/survey2"/>
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                style="@style/radioGroup" >
+                <RadioButton
+                    android:id="@+id/radiobutton21"
+                    style="@style/button"
+                    android:text="@string/radioButton1" />
+                <RadioButton
+                    android:id="@+id/radiobutton22"
+                    style="@style/button"
+                    android:text="@string/radioButton2" />
+                <RadioButton
+                    android:id="@+id/radiobutton23"
+                    style="@style/button"
+                    android:text="@string/radioButton3" />
+                <RadioButton
+                    android:id="@+id/radiobutton24"
+                    style="@style/button"
+                    android:text="@string/radioButton4" />
+                <RadioButton
+                    android:id="@+id/radiobutton25"
+                    style="@style/button"
+                    android:text="@string/radioButton5" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/text"
+                android:text="@string/survey3" />
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                style="@style/radioGroup" >
+                <RadioButton
+                    android:id="@+id/radiobutton31"
+                    style="@style/button"
+                    android:text="@string/radioButton1" />
+                <RadioButton
+                    android:id="@+id/radiobutton32"
+                    style="@style/button"
+                    android:text="@string/radioButton2" />
+                <RadioButton
+                    android:id="@+id/radiobutton33"
+                    style="@style/button"
+                    android:text="@string/radioButton3" />
+                <RadioButton
+                    android:id="@+id/radiobutton34"
+                    style="@style/button"
+                    android:text="@string/radioButton4" />
+                <RadioButton
+                    android:id="@+id/radiobutton35"
+                    style="@style/button"
+                    android:text="@string/radioButton5" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/text"
+                android:text="@string/survey4" />
+            <RadioGroup
+                android:id="@+id/radioGroup4"
+                style="@style/radioGroup" >
+                <RadioButton
+                    android:id="@+id/radiobutton41"
+                    style="@style/button"
+                    android:text="@string/radioButton1" />
+                <RadioButton
+                    android:id="@+id/radiobutton42"
+                    style="@style/button"
+                    android:text="@string/radioButton2" />
+                <RadioButton
+                    android:id="@+id/radiobutton43"
+                    style="@style/button"
+                    android:text="@string/radioButton3" />
+                <RadioButton
+                    android:id="@+id/radiobutton44"
+                    style="@style/button"
+                    android:text="@string/radioButton4" />
+                <RadioButton
+                    android:id="@+id/radiobutton45"
+                    style="@style/button"
+                    android:text="@string/radioButton5" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/text"
+                android:text="@string/survey5" />
+            <RadioGroup
+                android:id="@+id/radioGroup5"
+                style="@style/radioGroup" >
+                <RadioButton
+                    android:id="@+id/radiobutton51"
+                    style="@style/button"
+                    android:text="@string/radioButton1" />
+                <RadioButton
+                    android:id="@+id/radiobutton52"
+                    style="@style/button"
+                    android:text="@string/radioButton2" />
+                <RadioButton
+                    android:id="@+id/radiobutton53"
+                    style="@style/button"
+                    android:text="@string/radioButton3" />
+                <RadioButton
+                    android:id="@+id/radiobutton54"
+                    style="@style/button"
+                    android:text="@string/radioButton4" />
+                <RadioButton
+                    android:id="@+id/radiobutton55"
+                    style="@style/button"
+                    android:text="@string/radioButton5" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/text"
+                android:text="@string/survey6" />
+            <RadioGroup
+                android:id="@+id/radioGroup6"
+                style="@style/radioGroup" >
+                <RadioButton
+                    android:id="@+id/radiobutton61"
+                    style="@style/button"
+                    android:text="@string/radioButton1" />
+                <RadioButton
+                    android:id="@+id/radiobutton62"
+                    style="@style/button"
+                    android:text="@string/radioButton2" />
+                <RadioButton
+                    android:id="@+id/radiobutton63"
+                    style="@style/button"
+                    android:text="@string/radioButton3" />
+                <RadioButton
+                    android:id="@+id/radiobutton64"
+                    style="@style/button"
+                    android:text="@string/radioButton4" />
+                <RadioButton
+                    android:id="@+id/radiobutton65"
+                    style="@style/button"
+                    android:text="@string/radioButton5" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/text"
+                android:text="@string/survey7" />
+            <RadioGroup
+                android:id="@+id/radioGroup7"
+                style="@style/radioGroup" >
+                <RadioButton
+                    android:id="@+id/radiobutton71"
+                    style="@style/button"
+                    android:text="@string/radioButton1" />
+                <RadioButton
+                    android:id="@+id/radiobutton72"
+                    style="@style/button"
+                    android:text="@string/radioButton2" />
+                <RadioButton
+                    android:id="@+id/radiobutton73"
+                    style="@style/button"
+                    android:text="@string/radioButton3" />
+                <RadioButton
+                    android:id="@+id/radiobutton74"
+                    style="@style/button"
+                    android:text="@string/radioButton4" />
+                <RadioButton
+                    android:id="@+id/radiobutton75"
+                    style="@style/button"
+                    android:text="@string/radioButton5" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/text"
+                android:text="@string/survey8" />
+            <RadioGroup
+                android:id="@+id/radioGroup8"
+                style="@style/radioGroup" >
+                <RadioButton
+                    android:id="@+id/radiobutton81"
+                    style="@style/button"
+                    android:text="@string/radioButton1" />
+                <RadioButton
+                    android:id="@+id/radiobutton82"
+                    style="@style/button"
+                    android:text="@string/radioButton2" />
+                <RadioButton
+                    android:id="@+id/radiobutton83"
+                    style="@style/button"
+                    android:text="@string/radioButton3" />
+                <RadioButton
+                    android:id="@+id/radiobutton84"
+                    style="@style/button"
+                    android:text="@string/radioButton4" />
+                <RadioButton
+                    android:id="@+id/radiobutton85"
+                    style="@style/button"
+                    android:text="@string/radioButton5" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/text"
+                android:text="@string/survey9" />
+            <RadioGroup
+                android:id="@+id/radioGroup9"
+                style="@style/radioGroup" >
+                <RadioButton
+                    android:id="@+id/radiobutton91"
+                    style="@style/button"
+                    android:text="@string/radioButton1" />
+                <RadioButton
+                    android:id="@+id/radiobutton92"
+                    style="@style/button"
+                    android:text="@string/radioButton2" />
+                <RadioButton
+                    android:id="@+id/radiobutton93"
+                    style="@style/button"
+                    android:text="@string/radioButton3" />
+                <RadioButton
+                    android:id="@+id/radiobutton94"
+                    style="@style/button"
+                    android:text="@string/radioButton4" />
+                <RadioButton
+                    android:id="@+id/radiobutton95"
+                    style="@style/button"
+                    android:text="@string/radioButton5" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/text"
+                android:text="@string/survey10" />
+            <RadioGroup
+                android:id="@+id/radioGroup10"
+                style="@style/radioGroup" >
+                <RadioButton
+                    android:id="@+id/radiobutton101"
+                    style="@style/button"
+                    android:text="@string/radioButton1" />
+                <RadioButton
+                    android:id="@+id/radiobutton102"
+                    style="@style/button"
+                    android:text="@string/radioButton2" />
+                <RadioButton
+                    android:id="@+id/radiobutton103"
+                    style="@style/button"
+                    android:text="@string/radioButton3" />
+                <RadioButton
+                    android:id="@+id/radiobutton104"
+                    style="@style/button"
+                    android:text="@string/radioButton4" />
+                <RadioButton
+                    android:id="@+id/radiobutton105"
+                    style="@style/button"
+                    android:text="@string/radioButton5" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView11"
+                style="@style/text"
+                android:text="@string/survey11" />
+            <RadioGroup
+                android:id="@+id/radioGroup11"
+                style="@style/radioGroup" >
+                <RadioButton
+                    android:id="@+id/radiobutton111"
+                    style="@style/button"
+                    android:text="@string/radioButton1" />
+                <RadioButton
+                    android:id="@+id/radiobutton112"
+                    style="@style/button"
+                    android:text="@string/radioButton2" />
+                <RadioButton
+                    android:id="@+id/radiobutton113"
+                    style="@style/button"
+                    android:text="@string/radioButton3" />
+                <RadioButton
+                    android:id="@+id/radiobutton114"
+                    style="@style/button"
+                    android:text="@string/radioButton4" />
+                <RadioButton
+                    android:id="@+id/radiobutton115"
+                    style="@style/button"
+                    android:text="@string/radioButton5" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/text"
+                android:text="@string/survey12" />
+            <RadioGroup
+                android:id="@+id/radioGroup12"
+                style="@style/radioGroup" >
+                <RadioButton
+                    android:id="@+id/radiobutton121"
+                    style="@style/button"
+                    android:text="@string/radioButton1" />
+                <RadioButton
+                    android:id="@+id/radiobutton122"
+                    style="@style/button"
+                    android:text="@string/radioButton2" />
+                <RadioButton
+                    android:id="@+id/radiobutton123"
+                    style="@style/button"
+                    android:text="@string/radioButton3" />
+                <RadioButton
+                    android:id="@+id/radiobutton124"
+                    style="@style/button"
+                    android:text="@string/radioButton4" />
+                <RadioButton
+                    android:id="@+id/radiobutton125"
+                    style="@style/button"
+                    android:text="@string/radioButton5" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/text"
+                android:text="@string/survey13" />
+            <RadioGroup
+                android:id="@+id/radioGroup13"
+                style="@style/radioGroup" >
+                <RadioButton
+                    android:id="@+id/radiobutton131"
+                    style="@style/button"
+                    android:text="@string/radioButton1" />
+                <RadioButton
+                    android:id="@+id/radiobutton132"
+                    style="@style/button"
+                    android:text="@string/radioButton2" />
+                <RadioButton
+                    android:id="@+id/radiobutton133"
+                    style="@style/button"
+                    android:text="@string/radioButton3" />
+                <RadioButton
+                    android:id="@+id/radiobutton134"
+                    style="@style/button"
+                    android:text="@string/radioButton4" />
+                <RadioButton
+                    android:id="@+id/radiobutton135"
+                    style="@style/button"
+                    android:text="@string/radioButton5" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView14"
+                style="@style/text"
+                android:text="@string/survey14" />
+            <RadioGroup
+                android:id="@+id/radioGroup14"
+                style="@style/radioGroup" >
+                <RadioButton
+                    android:id="@+id/radiobutton141"
+                    style="@style/button"
+                    android:text="@string/radioButton1" />
+                <RadioButton
+                    android:id="@+id/radiobutton142"
+                    style="@style/button"
+                    android:text="@string/radioButton2" />
+                <RadioButton
+                    android:id="@+id/radiobutton143"
+                    style="@style/button"
+                    android:text="@string/radioButton3" />
+                <RadioButton
+                    android:id="@+id/radiobutton144"
+                    style="@style/button"
+                    android:text="@string/radioButton4" />
+                <RadioButton
+                    android:id="@+id/radiobutton145"
+                    style="@style/button"
+                    android:text="@string/radioButton5" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView15"
+                style="@style/text"
+                android:text="@string/survey15" />
+            <RadioGroup
+                android:id="@+id/radioGroup15"
+                style="@style/radioGroup" >
+                <RadioButton
+                    android:id="@+id/radiobutton151"
+                    style="@style/button"
+                    android:text="@string/radioButton1" />
+                <RadioButton
+                    android:id="@+id/radiobutton152"
+                    style="@style/button"
+                    android:text="@string/radioButton2" />
+                <RadioButton
+                    android:id="@+id/radiobutton153"
+                    style="@style/button"
+                    android:text="@string/radioButton3" />
+                <RadioButton
+                    android:id="@+id/radiobutton154"
+                    style="@style/button"
+                    android:text="@string/radioButton4" />
+                <RadioButton
+                    android:id="@+id/radiobutton155"
+                    style="@style/button"
+                    android:text="@string/radioButton5" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView16"
+                style="@style/text"
+                android:text="@string/survey16" />
+            <RadioGroup
+                android:id="@+id/radioGroup16"
+                style="@style/radioGroup" >
+                <RadioButton
+                    android:id="@+id/radiobutton161"
+                    style="@style/button"
+                    android:text="@string/radioButton1" />
+                <RadioButton
+                    android:id="@+id/radiobutton162"
+                    style="@style/button"
+                    android:text="@string/radioButton2" />
+                <RadioButton
+                    android:id="@+id/radiobutton163"
+                    style="@style/button"
+                    android:text="@string/radioButton3" />
+                <RadioButton
+                    android:id="@+id/radiobutton164"
+                    style="@style/button"
+                    android:text="@string/radioButton4" />
+                <RadioButton
+                    android:id="@+id/radiobutton165"
+                    style="@style/button"
+                    android:text="@string/radioButton5" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView17"
+                style="@style/text"
+                android:text="@string/survey17" />
+            <RadioGroup
+                android:id="@+id/radioGroup17"
+                style="@style/radioGroup" >
+                <RadioButton
+                    android:id="@+id/radiobutton171"
+                    style="@style/button"
+                    android:text="@string/radioButton1" />
+                <RadioButton
+                    android:id="@+id/radiobutton172"
+                    style="@style/button"
+                    android:text="@string/radioButton2" />
+                <RadioButton
+                    android:id="@+id/radiobutton173"
+                    style="@style/button"
+                    android:text="@string/radioButton3" />
+                <RadioButton
+                    android:id="@+id/radiobutton174"
+                    style="@style/button"
+                    android:text="@string/radioButton4" />
+                <RadioButton
+                    android:id="@+id/radiobutton175"
+                    style="@style/button"
+                    android:text="@string/radioButton5" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView18"
+                style="@style/text"
+                android:text="@string/survey18" />
+            <RadioGroup
+                android:id="@+id/radioGroup18"
+                style="@style/radioGroup" >
+                <RadioButton
+                    android:id="@+id/radiobutton181"
+                    style="@style/button"
+                    android:text="@string/radioButton1" />
+                <RadioButton
+                    android:id="@+id/radiobutton182"
+                    style="@style/button"
+                    android:text="@string/radioButton2" />
+                <RadioButton
+                    android:id="@+id/radiobutton183"
+                    style="@style/button"
+                    android:text="@string/radioButton3" />
+                <RadioButton
+                    android:id="@+id/radiobutton184"
+                    style="@style/button"
+                    android:text="@string/radioButton4" />
+                <RadioButton
+                    android:id="@+id/radiobutton185"
+                    style="@style/button"
+                    android:text="@string/radioButton5" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
