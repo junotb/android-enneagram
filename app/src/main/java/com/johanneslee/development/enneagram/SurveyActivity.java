@@ -21,8 +21,8 @@ public class SurveyActivity extends Activity implements View.OnClickListener, Co
     private final int[] textViewId = {R.id.textView1, R.id.textView2, R.id.textView3, R.id.textView4, R.id.textView5, R.id.textView6, R.id.textView7, R.id.textView8, R.id.textView9, R.id.textView10, R.id.textView11, R.id.textView12, R.id.textView13, R.id.textView14, R.id.textView15, R.id.textView16, R.id.textView17, R.id.textView18};
     private final int[] radioGroupsId = {R.id.radioGroup1, R.id.radioGroup2, R.id.radioGroup3, R.id.radioGroup4, R.id.radioGroup5, R.id.radioGroup6, R.id.radioGroup7, R.id.radioGroup8, R.id.radioGroup9, R.id.radioGroup10, R.id.radioGroup11, R.id.radioGroup12, R.id.radioGroup13, R.id.radioGroup14, R.id.radioGroup15, R.id.radioGroup16, R.id.radioGroup17, R.id.radioGroup18};
 
-    private int[] answerValues;
-    private int[] typeValues;
+    private int[] surveyValues;
+    private int[] resultValues;
 
     private int pages = 0;
 
@@ -46,15 +46,29 @@ public class SurveyActivity extends Activity implements View.OnClickListener, Co
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_survey);
 
+        setupValues();
         setupViews();
     }
 
-    private void setupViews() {
-        answerValues = new int[180]; //when user check the value of spinner, store to this.
-        typeValues = new int[9]; //value to get type of user
-
+    private void setupValues() {
         mStringArray = getResources().getStringArray(stringArrayId[pages]); //questions
 
+        surveyValues = new int[180]; //when user check the value of spinner, store to this.
+        resultValues = new int[9]; //value to get type of user
+
+        for(int i = 0;i < 9;i++) {
+            for(int j = 0; j < 20;j++) {
+                //Want init 0 ~ 179
+                surveyValues[(i * 10) + (j * 2)] = -1;
+                surveyValues[(i * 10) + (j * 2) + 1] = -1;
+            }
+            //Want init only 0 ~ 8
+            resultValues[i % 9] = -1;
+        }
+
+    }
+
+    private void setupViews() {
         topBar = (TextView) findViewById(R.id.topbar); //show user how it progressed
         mScrollView = (ScrollView) findViewById(R.id.scrollView);
 
@@ -75,41 +89,9 @@ public class SurveyActivity extends Activity implements View.OnClickListener, Co
             for (int j = 0; j < 5; j++) {
                 radioButton = (RadioButton) mRadioGroups[i].getChildAt(j);
                 radioButton.setOnCheckedChangeListener(this);
-
-                //Want init 0 ~ 179
-                answerValues[(i * 10) + (j * 2)] = -1;
-                answerValues[(i * 10) + (j * 2) + 1] = -1;
             }
-
-            //Want init only 0 ~ 8
-            typeValues[i % 9] = -1;
         }
 
-    }
-
-    private void setPage(){
-        mStringArray = null;
-        mStringArray = getResources().getStringArray(stringArrayId[pages]);
-
-        //setting topBar
-        topBar.setText((pages + 1) + " / 10");
-
-        for (int i = 0; i < 18; i++) {
-            //setting radiobuttons
-            mRadioGroups[i].clearCheck();
-
-            //setting questions
-            mTextView[i].setText(mStringArray[i]);
-
-            //setting previous values below
-            if(answerValues[pages * 18 + i] < 0)
-                continue;
-
-            radioButton = (RadioButton) mRadioGroups[i].getChildAt(answerValues[pages * 18 + i]);
-            radioButton.setChecked(true);
-        }
-
-        mScrollView.smoothScrollTo(0, 0);
     }
 
     public void onClick(View v) {
@@ -133,11 +115,11 @@ public class SurveyActivity extends Activity implements View.OnClickListener, Co
                     }
                 }
 
-                setAnswerValues(); //store answerValues
+                setSurveyValues(); //store answerValues
 
                 //is it progressed enough?
-                if (pages >= 9) { //yes
-                    Node[] typeArray = calculate(); //get nodes arranged in ascending order
+                if (pages >= 1) { //yes
+                    Node[] typeArray = setResultValues(); //get nodes arranged in ascending order
 
                     unLock(); //unlock Dictionary activity
 
@@ -166,25 +148,50 @@ public class SurveyActivity extends Activity implements View.OnClickListener, Co
         }).show();
     }
 
-    private void setAnswerValues() {
+    private void setPage(){
+        mStringArray = null;
+        mStringArray = getResources().getStringArray(stringArrayId[pages]);
+
+        //setting topBar
+        topBar.setText((pages + 1) + " / 10");
+
+        for (int i = 0; i < 18; i++) {
+            //setting radiobuttons
+            mRadioGroups[i].clearCheck();
+
+            //setting questions
+            mTextView[i].setText(mStringArray[i]);
+
+            //setting previous values below
+            if(surveyValues[pages * 18 + i] < 0)
+                continue;
+
+            radioButton = (RadioButton) mRadioGroups[i].getChildAt(surveyValues[pages * 18 + i]);
+            radioButton.setChecked(true);
+        }
+
+        mScrollView.smoothScrollTo(0, 0);
+    }
+
+    private void setSurveyValues() {
         for (int i = 0; i < 18; i++) {
             int checkedRadioButtonID = mRadioGroups[i].getCheckedRadioButtonId();
             radioButton = (RadioButton) mRadioGroups[i].findViewById(checkedRadioButtonID);
-            answerValues[pages * 18 + i] = mRadioGroups[i].indexOfChild(radioButton);
+            surveyValues[pages * 18 + i] = mRadioGroups[i].indexOfChild(radioButton);
         }
     }
 
-    private Node[] calculate(){
+    private Node[] setResultValues(){
         Node[] typeArray = new Node[9];
 
         //summarize all answerValues to typeValues
         for(int i = 0; i < 180; i++){
-            typeValues[i % 9] += answerValues[i];
+            resultValues[i % 9] += surveyValues[i];
         }
 
         //setting nodes
         for (int i = 0; i < 9; i++) {
-            typeArray[i] = new Node(i + 1, typeValues[i]);
+            typeArray[i] = new Node(i + 1, resultValues[i]);
         }
 
         //arrange ascending order

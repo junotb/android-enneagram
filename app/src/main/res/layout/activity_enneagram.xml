@@ -43,7 +43,7 @@
         <Button
             android:id="@+id/toDictionaryButton"
             style="@style/introButton"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:text="@string/toDictionaryButton"/>
     </LinearLayout>
 </LinearLayout>

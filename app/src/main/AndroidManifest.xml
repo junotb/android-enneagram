@@ -21,10 +21,17 @@
         </activity>
         <activity
             android:name=".ResultActivity">
+            <data
+                android:scheme="@string/kakao_scheme"
+                android:host="@string/kakaolink_host" />
         </activity>
         <activity
             android:name=".DictionaryActivity">
         </activity>
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 </manifest>
