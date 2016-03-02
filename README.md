@@ -1,2 +1,7 @@
-# enneagram
-This is the Enneagram testing application. The Enneagram is a personality typing system that consists of nine different types. Questions are written in Korean. This app are scheduled to decorate more and more.
+# 에니어그램
+한국어로 작성된 성격 유형검사 앱입니다.
+검사를 통해 본인이 어떤 에니어그램 유형인지 확인하고 결과를 친구와 공유해보세요!
+
+# 최근 이슈
+1. 카카오톡으로 공유되었을 때 텍스트가 너무 많다.
+2. 프레임워크없이 개발되어 생산성이 낮다.
