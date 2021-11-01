@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.johanneslee.development.enneagram" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="성격 진단 테스트 - 에니어그램"
         android:theme="@style/AppTheme" >
         <activity
+            android:exported="true"
             android:name=".EnneagramActivity">
-            <intent-filter >
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -20,10 +23,12 @@
             android:name=".SurveyActivity">
         </activity>
         <activity
+            android:exported="true"
             android:name=".ResultActivity">
-            <data
-                android:scheme="@string/kakao_scheme"
-                android:host="@string/kakaolink_host" />
+            <intent-filter>
+                <data android:scheme="@string/kakao_scheme" />
+                <data android:host="@string/kakaolink_host" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".DictionaryActivity">
@@ -32,6 +37,4 @@
             android:name="com.kakao.sdk.AppKey"
             android:value="@string/kakao_app_key" />
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 </manifest>

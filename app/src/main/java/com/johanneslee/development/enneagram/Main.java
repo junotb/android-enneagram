@@ -17,8 +17,8 @@ import android.widget.TextView;
 public class Main extends Activity {
     private final int[] textViewId = {R.id.textView1, R.id.textView2, R.id.textView3, R.id.textView4, R.id.textView5, R.id.textView6, R.id.textView7, R.id.textView8, R.id.textView9};
     private final int[] spinnerId = {R.id.spinner1, R.id.spinner2, R.id.spinner3, R.id.spinner4, R.id.spinner5, R.id.spinner6, R.id.spinner7, R.id.spinner8, R.id.spinner9};
-    private final int[] stringArrayId = {R.array.stringArray0, R.array.stringArray1, R.array.stringArray2, R.array.stringArray3, R.array.stringArray4, R.array.stringArray5, R.array.stringArray6, R.array.stringArray7, R.array.stringArray8, R.array.stringArray9, R.array.stringArray10, R.array.stringArray11, R.array.stringArray12, R.array.stringArray13, R.array.stringArray14, R.array.stringArray15, R.array.stringArray16, R.array.stringArray17, R.array.stringArray18, R.array.stringArray19};
-    private final int[] topbarId = {R.string.page1, R.string.page2, R.string.page3, R.string.page4, R.string.page5, R.string.page6, R.string.page7, R.string.page8, R.string.page9, R.string.page10, R.string.page11, R.string.page12, R.string.page13, R.string.page14, R.string.page15, R.string.page16, R.string.page17, R.string.page18, R.string.page19, R.string.page20};
+    private final int[] stringArrayId = {R.array.stringArray0, R.array.stringArray1, R.array.stringArray2, R.array.stringArray3, R.array.stringArray4, R.array.stringArray5, R.array.stringArray6, R.array.stringArray7, R.array.stringArray8, R.array.stringArray9};
+    private final int[] topbarId = {R.string.page1, R.string.page2, R.string.page3, R.string.page4, R.string.page5, R.string.page6, R.string.page7, R.string.page8, R.string.page9, R.string.page10};
     private final String[] items = {"0", "1", "2", "3", "4", "5"};
     private String[] stringArray;
     private int[] analysis;
@@ -39,23 +39,23 @@ public class Main extends Activity {
 
         //initializing
         progress = 0;
-        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, items);
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, items);
         stringArray = getResources().getStringArray(stringArrayId[progress]); //questions
         textView = new TextView[9];
         spinner = new Spinner[9];
         analysis = new int[9]; //value to get type of user
         values = new int[9]; //when user check the value of spinner, store to this.
-        topbar = (TextView) findViewById(R.id.topbar); //show user how it progressed
+        topbar = findViewById(R.id.topbar); //show user how it progressed
         topbar.setText(getString(topbarId[progress]));
-        scrollView = (ScrollView) findViewById(R.id.scrollView);
-        Button next = (Button) findViewById(R.id.next);
+        scrollView = findViewById(R.id.scrollView);
+        Button next = findViewById(R.id.next);
 
         for (int i = 0; i < 9; i++) { // initializing arraies
             textView[i] = new TextView(this);
-            textView[i] = (TextView) findViewById(textViewId[i]);
+            textView[i] = findViewById(textViewId[i]);
             textView[i].setText(stringArray[i]);
             spinner[i] = new Spinner(this);
-            spinner[i] = (Spinner) findViewById(spinnerId[i]);
+            spinner[i] = findViewById(spinnerId[i]);
             spinner[i].setId(i);
             spinner[i].setAdapter(adapter);
             spinner[i].setOnItemSelectedListener(mOnItemSelectedListener);
@@ -80,7 +80,6 @@ public class Main extends Activity {
                             continue;
                         }
                         if (secondWeight < analysis[i]) {
-                            second = i;
                             secondWeight = analysis[i];
                         }
                     }

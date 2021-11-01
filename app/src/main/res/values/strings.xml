@@ -15,6 +15,8 @@
     <string name="leftArrow">\u003c</string>
     <string name="rightArrow">\u003e</string>
 
+    <string name="next">NEXT</string>
+
     <!--
     /*
     These are strings for DictionaryActivity.
@@ -43,14 +45,14 @@
     -->
 
     <string name="whatBox1">\u25b2 애니어그램이란?</string>
-    <string name="whatBox2">\u25b2 도움을 주신 분들...</string>
+    <string name="whatBox2">\u25b2 도움을 주신 분들.&#8230;</string>
 
     <string name="what1">에니어그램(Enneagram)은 사람을 9가지 성격으로 분류하는 성격 유형 지표이며 인간에 대해 이해할 수 있는 방법들 중에 하나입니다. 희랍어에서 9를 뜻하는 ennear와 점, 선, 도형을 뜻하는 grammos의 합성어로, 본래 에니어그램은 \'9개의 점이 있는 도형\'이라는 의미입니다.</string>
     <string name="what2">제게 심리학을 처음 소개해준 김지훈, 고맙습니다.\n또한, 본 앱의 지문들은 하단 사이트들의 도움을 받았습니다. 진심으로 감사드립니다 :-)</string>
 
-    <string name="link1">http://maindheart.org</string>
-    <string name="link2">http://hurr.tistory.com</string>
-    <string name="link3">http://blog.naver.com/dryks</string>
+    <string name="link1">https://maindheart.org</string>
+    <string name="link2">https://hurr.tistory.com</string>
+    <string name="link3">https://blog.naver.com/dryks</string>
 
     <!--
     /*
